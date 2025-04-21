@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cinzel&display=swap" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<!-- Appearance -->
+		<link rel="stylesheet" href="plugin/appearance/appearance.css">
+
+		<style>
+
+			.reveal h1, .reveal h2, .reveal h3 {
+				color: #ffffff;
+				font-weight: bold;
+			}
+
+			.reveal .smaller-text{
+				font-size: 0.8em !important;
+				font-family: 'Cinzel', serif;
+			}
+
+			.reveal .smallest-text{
+				font-size: 0.6em !important;
+				font-family: 'Cinzel', serif;
+			}
+
+			.reveal .text-primary   { color: #0d6efd; }  /* Bootstrap primary */
+			.reveal .text-secondary { color: #6c757d; }
+			.reveal .text-success   { color: #198754; }
+			.reveal .text-danger    { color: #dc3545; }
+			.reveal .text-warning   { color: #ffc107; }
+			.reveal .text-info      { color: #0dcaf0; }
+			.reveal .text-light     { color: #f8f9fa; }
+			.reveal .text-dark      { color: #212529; }
+			.reveal .text-muted     { color: #6c757d; }
+			.reveal .text-accent    { color: #5fd2e9; }
+			.reveal .text-gray    { color: #dddddd; }
+
+			.reveal a {
+				color: #4da3ff;
+				text-decoration: underline;
+			}
+
+			.reveal a:hover {
+				color: #72c3ff;
+			}
+
+			.reveal .highlight {
+				color: #32c6e2;
+				font-weight: 800;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				margin-top: 1em;
+				margin-bottom: 0.5em;
+			}
+
+			.reveal .text-shadow {
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+			}
+
+			.reveal .text-shadow-light {
+				text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+			}
+
+			.reveal .text-glow {
+				text-shadow: 0 0 5px rgba(13, 110, 253, 0.8); /* схоже на .text-primary */
+			}
+
+			#solanaForm {
+				margin-top: 20px;
+			}
+
+			#solanaForm input[type="text"] {
+				width: 300px;
+				padding: 12px 20px;
+				font-size: 16px;
+				border: 2px solid #00ffaa;
+				border-radius: 8px;
+				background-color: #111;
+				color: #00ffaa;
+				box-shadow: 0 0 10px #00ffaa44;
+				outline: none;
+				margin-right: 10px;
+				transition: 0.3s;
+			}
+
+			#solanaForm input[type="text"]:focus {
+				box-shadow: 0 0 20px #00ffaa88;
+			}
+
+			#solanaForm button {
+				padding: 12px 20px;
+				font-size: 16px;
+				color: #111;
+				background: #00ffaa;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+				box-shadow: 0 0 10px #00ffaa66;
+				transition: background 0.3s, box-shadow 0.3s;
+			}
+
+			#solanaForm button:hover {
+				background: #33ffbb;
+				box-shadow: 0 0 20px #00ffaa99;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1 class="animate__flipInX animate__slow">Святой Морис и Фиванский легион</h1>
+					<h3 class="animate__fadeInDown animate__faster text-shadow" data-delay="75" data-container-delay="700" data-split="letters">история верности и мученичества</h3>
+				</section>
+				<section>
+					<section>
+						<h3 class="text-glow animate__fadeInDown" data-split="words" data-delay="200">Исторический контекст</h3>
+						<ul class="smaller-text">
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow">III век н.э. — Римская империя при императоре Максимиане</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="200">Христианство под запретом, начались гонения на верующих</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="400">Фиванский легион направлен из Египта в Галлию</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="600">Начало пути, ведущего в Швейцарию и к легенде о Святом Маврикии</li>
+						</ul>
+<!--						<p class="small animate__fadeInUp mt-5"></p>-->
+						<div class="row">
+							<img class="animate__fadeInDown" data-src="assets/img/maurice_noir.jpeg">
+						</div>
+					</section>
+
+					<section>
+						<h3 class="text-glow animate__fadeInDown text-warning" data-split="words" data-delay="200">Фиванский легион</h3>
+						<ul class="smaller-text">
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow">6600 христианских солдат — Фиванский легион</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="200">Отказ приносить языческие жертвы римским богам</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="400">Казнь каждой десятой — децимация, затем мученичество всего легиона</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="600">Командир — Святой Маврикий (Морис), христианский мученик и покровитель</li>
+						</ul>
+						<div class="row">
+							<img class="animate__fadeInDown" data-src="assets/img/Martirio_de_San_Mauricio_El_Greco.jpg">
+						</div>
+					</section>
+
+					<section>
+						<h3 class="text-glow animate__fadeInDown text-warning" data-split="words" data-delay="200">Аббатство Сан-Морис</h3>
+						<ul class="smaller-text">
+							<li class="fragment fade-in smaller-text text-gray text-glow">Основано в 515 году
+								королём Сигизмундом Бургундским</li>
+							<li class="fragment fade-in smaller-text text-gray text-glow">Древнейшая обитель Европы</li>
+							<li class="fragment fade-in smaller-text text-gray text-glow">Реликвии Святого Мориса</li>
+							<li class="fragment fade-in smaller-text text-gray text-glow">Паломнический центр</li>
+						</ul>
+						<p class="small animate__fadeInUp mt-5"></p>
+					</section>
+
+					<section>
+						<h3 class="text-glow animate__fadeInDown text-warning" data-split="words" data-delay="200">
+							Барельеф Святого Мориса
+						</h3>
+						<ul class="smaller-text">
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow">Изображён как римский воин</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="200">В доспехах, с щитом и копьём</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="400">Символ мужества и духовной стойкости</li>
+						</ul>
+						<div class="row">
+							<img class="animate__fadeInDown" data-src="assets/img/st_maurice_bas_relief.jpg" alt="Барельеф Святого Мориса">
+						</div>
+					</section>
+
+					<section>
+						<h4 class="text-glow animate__fadeInDown text-warning">Названия в римскую эпоху</h4>
+						<p class="smallest-text">Современные названия — в античности:</p>
+
+						<table class="smallest-text">
+							<thead>
+							<tr>
+								<th>Современное название</th>
+								<th>Античное название</th>
+								<th>Значение</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Saint-Maurice</td>
+								<td><em>Agaunum</em></td>
+								<td>Место мученичества Фиванского легиона</td>
+							</tr>
+							<tr>
+								<td>Martigny</td>
+								<td><em>Octodurus</em></td>
+								<td>Епископская резиденция, важный римский город</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<p class="smallest-text"><strong>Контекст:</strong></p>
+						<ul>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow"><span class="text-warning">Agaunum</span> упоминается в «Passio martyrum Acaunensium» Евхерия Лионского (~440 г.)</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow"><span class="text-danger">Octodurus</span> — раннехристианский центр, епископ Теодор носил титул «епископ Октодура»</li>
+						</ul>
+					</section>
+
+
+					<section>
+						<h3 class="text-glow animate__fadeInDown text-warning" data-split="words" data-delay="200">
+							Наследие Святого Мориса
+						</h3>
+						<ul class="smaller-text">
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow">
+								Один из самых почитаемых военных святых Европы
+							</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="200">
+								Покровитель воинов, рыцарей, Папской гвардии и многих орденов
+							</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="400">
+								Имя Морис распространено во Франции, Германии, Швейцарии, Италии
+							</li>
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="600">
+								К нему обращались при стихийных бедствиях — граде, бурях и заморозках
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 class="text-glow animate__fadeInDown text-warning" data-split="words" data-delay="200">
+							Источники и исследования
+						</h3>
+
+						<ul class="smaller-text">
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow">
+								<strong>1. Раннехристианские тексты:</strong><br>
+								Eucher de Lyon, <em>Passio martyrum Acaunensium</em> (ок. 440)<br>
+								Хроника Фредегара (VII в.)<br>
+								<em>Passio Urs et Victor</em> (X век)
+							</li>
+
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="200">
+								<strong>2. Археология и письменные свидетельства:</strong><br>
+								Раскопки в Сен-Морисе, Сионе, Золотурне<br>
+								Аббатство Сен-Морис и церковь Святого Петра (Soleure)
+							</li>
+
+							<li class="animate__fadeInLeft smaller-text text-gray text-glow" data-delay="400">
+								<strong>3. Современные академические источники:</strong><br>
+								<a href="https://hls-dhs-dss.ch/fr/articles/010198/2009-12-17/" target="_blank">DHS: Mauricius</a><br>
+								<a href="https://hls-dhs-dss.ch/fr/articles/010199/2013-02-19/" target="_blank">DHS: Légion thébaine</a><br>
+								<a href="https://hls-dhs-dss.ch/fr/articles/010203/2014-03-05/" target="_blank">DHS: Agaune</a><br>
+								<a href="https://hls-dhs-dss.ch/fr/articles/010228/2015-03-20/" target="_blank">DHS: Abbaye de Saint-Maurice</a><br>
+								<a href="https://www.abbaye-stmaurice.ch/" target="_blank">abbaye-stmaurice.ch</a><br>
+								<a href="https://en.wikipedia.org/wiki/Theban_Legion" target="_blank">Wikipedia: Theban Legion</a>
+							</li>
+						</ul>
+
+					</section>
+
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controlsLayout: 'bottom-right',
+				slideNumber: 'c/t',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealSearch, Appearance ],
+
+			});
+
+
+			Reveal.on('get-token-data-aave', () => {
+				const baseUrl = window.location.hostname === 'localhost'
+						? 'http://localhost:7100'
+						: '';
+
+				fetch(`${baseUrl}/token/AAVE`)
+					.then(res => res.json())
+					.then(data => {
+						const aave = data.data.AAVE;
+
+						document.getElementById('token-name').textContent = `${aave.name} (${aave.symbol})`;
+						document.getElementById('token-price').textContent = '$' + Number(aave.quote.USD.price).toFixed(2);
+						document.getElementById('token-marketcap').textContent = '$' + (aave.quote.USD.market_cap / 1e9).toFixed(2) + ' B';
+						document.getElementById('token-rank').textContent = '#' + aave.cmc_rank;
+						document.getElementById('token-supply').textContent = Number(aave.circulating_supply).toLocaleString() + ' ' + aave.symbol;
+					})
+					.catch(error => {
+						console.error('API error:', error);
+
+						document.getElementById('token-name').textContent = 'Помилка завантаження ' +error;
+					});
+			});
+
+			document.getElementById("solanaForm").addEventListener("submit", function (e) {
+				e.preventDefault();
+				const address = document.getElementById("solanaAddress").value.trim();
+				const msg = document.getElementById("formMsg");
+
+				// Solana address regex
+				const solanaRegex = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
+
+				if (!solanaRegex.test(address)) {
+					msg.textContent = "Невірна адреса Solana!";
+					msg.style.color = "red";
+					return;
+				}
+
+				const baseUrl = window.location.hostname === 'localhost'
+						? 'http://localhost:5000'
+						: '';
+
+				// Send to backend via GET (for Flask /submit endpoint)
+				fetch(`${baseUrl}/submit/?address=${encodeURIComponent(address)}`)
+						.then((res) => res.json())
+						.then((data) => {
+							if (data.message) {
+								msg.textContent = `✅ ${data.message}`;
+								msg.style.color = "lime";
+								document.getElementById("solanaForm").reset();
+							} else {
+								msg.textContent = `${data.error || 'Помилка'}`;
+								msg.style.color = "red";
+							}
+						})
+						.catch((err) => {
+							msg.textContent = "Помилка з'єднання з сервером";
+							msg.style.color = "red";
+						});
+			});
+		</script>
+	</body>
+</html>
